@@ -7,18 +7,16 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { MaterialModule } from './material/material.module';
+import { CoreModule } from './core/core.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent,
     DashboardComponent
   ],
   imports: [
@@ -26,8 +24,8 @@ import { MaterialModule } from './material/material.module';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FlexLayoutModule,
-    MaterialModule
+    CoreModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
