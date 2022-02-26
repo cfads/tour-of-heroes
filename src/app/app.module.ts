@@ -23,8 +23,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
 
     // feature
-    DashboardModule,
-    HeroesModule,
 
     // app
     CoreModule,
