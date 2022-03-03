@@ -4,7 +4,6 @@ import { Observable, of, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Hero } from '../../hero.model';
 import { MessageService } from './message.service';
-import { HEROES } from './mock-heroes';
 
 @Injectable({
   providedIn: 'root'
