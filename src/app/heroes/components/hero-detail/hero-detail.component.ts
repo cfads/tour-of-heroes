@@ -26,13 +26,21 @@ export class HeroDetailComponent implements OnInit{
   getHero(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
 
-    this.heroService.getHero(id).subscribe(hero =>{
+    this.heroService.getOne(id).subscribe(hero =>{
       this.hero = hero
     })
   }
 
   goBack(): void {
     this.location.back();
+  }
+
+  isFormValid(): boolean {
+    return !!this.hero.name.trim()
+  }
+
+  save(): void {
+    this.heroService.updateHero(this.hero).subscribe(()=>this.goBack());
   }
 
 }
