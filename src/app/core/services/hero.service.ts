@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of, tap } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Hero } from '../../hero.model';
+import { LoadingService } from './loading.service';
 import { MessageService } from './message.service';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class HeroService {
 
   private heroesUrl = `${environment.baseUrl}/heroes`;
 
-  constructor(private http:HttpClient ,private messageService:MessageService){ }
+  constructor(private http:HttpClient ,private messageService:MessageService, private loadingService:LoadingService){ }
 
   // GET /heroes
   getHeroes(): Observable<Hero[]> {
