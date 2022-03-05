@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": 1,
-      "name": "Coringa"
+      "name": "Batman"
     },
     {
       "id": 2,
@@ -39,6 +39,14 @@
     {
       "id": 10,
       "name": "Capitão América"
+    },
+    {
+      "name": "Cris",
+      "id": 11
+    },
+    {
+      "name": "Omni man",
+      "id": 12
     }
   ]
 }
