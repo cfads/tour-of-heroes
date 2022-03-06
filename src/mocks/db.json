@@ -2,7 +2,7 @@
   "heroes": [
     {
       "id": 1,
-      "name": "Batman"
+      "name": "Batman 2"
     },
     {
       "id": 2,
@@ -47,6 +47,14 @@
     {
       "name": "Omni man",
       "id": 12
+    },
+    {
+      "name": "The Flash",
+      "id": 13
+    },
+    {
+      "name": "Marciano",
+      "id": 14
     }
   ]
 }
